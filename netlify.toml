@@ -7,6 +7,12 @@
 [build.environment]
   NODE_VERSION = "15.5.0"
 
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/b8U5Hdy"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
