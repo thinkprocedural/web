@@ -2,20 +2,19 @@
 .vscode/
 
 # dependencies
-node_modules/
 .pnp
 .pnp.js
+node_modules/
 
 # dependency lock files
 package-lock.json
-yarn.lock
 pnpm-lock.yaml
+yarn.lock
 
-# next.js
+# other
 .next/
-out/
-build
-
-tmp/
-logs/
 *.log*
+build
+logs/
+out/
+tmp/
