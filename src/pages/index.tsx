@@ -9,7 +9,7 @@ const Home: React.FC = () => (
 
     <main>
       <a href="https://discord.gg/b8U5Hdy" className="card">
-        <h3>Think Procedural</h3>
+        <h2>Think Procedural</h2>
         <p>Discord Server</p>
       </a>
     </main>
@@ -50,7 +50,7 @@ const Home: React.FC = () => (
           color: inherit;
           flex-basis: 45%;
           margin: 1rem;
-          padding: 1.5rem;
+          padding: 3rem;
           text-align: center;
           text-decoration: none;
 
@@ -65,13 +65,11 @@ const Home: React.FC = () => (
           background-color: #0a0a0a;
         }
 
-        .card h3 {
-          font-size: 1.5rem;
+        .card h2 {
           margin: 0 0 1rem 0;
         }
 
         .card p {
-          font-size: 1rem;
           margin: 0;
           padding: 0;
         }
@@ -83,23 +81,6 @@ const Home: React.FC = () => (
           height: 100px;
           justify-content: center;
           width: 100%;
-        }
-      `}
-    </style>
-
-    <style jsx global>
-      {`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}
     </style>
