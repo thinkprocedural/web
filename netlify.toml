@@ -1,0 +1,55 @@
+[Settings]
+
+[build]
+  command = "npm run export"
+  publish = "out/"
+
+[build.environment]
+  NODE_VERSION = "15.5.0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = """
+        base-uri 'self';
+        connect-src 'self' cdn.jsdelivr.net;
+        default-src 'none';
+        font-src 'self' cdn.jsdelivr.net;
+        form-action 'self';
+        frame-ancestors 'none';
+        frame-src 'self';
+        img-src 'self' data:;
+        manifest-src 'self';
+        media-src 'self';
+        object-src 'none';
+        script-src 'self' cdn.jsdelivr.net;
+        style-src 'self' cdn.jsdelivr.net;
+        upgrade-insecure-requests;
+    """
+    Expect-CT = "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    Permissions-Policy = """
+        accelerometer 'self';
+        ambient-light-sensor 'self';
+        autoplay 'self';
+        camera 'self';
+        document-domain 'self';
+        encrypted-media 'self';
+        fullscreen 'self';
+        geolocation 'self';
+        gyroscope 'self';
+        magnetometer 'self';
+        microphone 'self';
+        midi 'self';
+        payment 'self';
+        picture-in-picture 'self';
+        speaker 'self';
+        sync-xhr 'self';
+        usb 'self';
+        vr / xr 'self';
+    """
+    Referrer-Policy = "strict-origin"
+    Strict-Transport-Security = "max-age=31557600; includesubdomains; preload"
+    Vary = "Accept-Encoding"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "deny"
+    X-XSS-Protection = "1; mode=block"
