@@ -1,0 +1,21 @@
+# editor settings
+.vscode/
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# dependency lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# next.js
+.next/
+out/
+build
+
+tmp/
+logs/
+*.log*
