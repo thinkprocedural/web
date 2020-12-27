@@ -15,13 +15,20 @@ body {
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+}
+
 * {
     box-sizing: border-box;
 }
 
 a {
-    &:hover {
+    &:active,
+    &:hover,
+    &:focus {
         text-decoration: none;
+        outline: none;
     }
 
     &:focus {

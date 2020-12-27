@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Think Procedural</title>
       </Head>
@@ -16,28 +16,20 @@ export default function Home() {
 
       <style jsx>
         {`
-          .container {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 0;
-          }
-
           main {
-            align-items: center;
             display: flex;
             flex-direction: column;
             flex: 1;
+
+            align-items: center;
             justify-content: center;
+            height: 100vh;
             padding: 0;
           }
 
           .card {
             border-radius: 10px;
             color: #ffffff;
-            flex-basis: 45%;
             margin: 1rem;
             padding: 3rem;
             text-align: center;
@@ -64,6 +56,6 @@ export default function Home() {
           }
         `}
       </style>
-    </div>
+    </>
   );
 }
