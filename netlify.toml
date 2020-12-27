@@ -13,12 +13,6 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/_next/static/service-worker.js"
-  to = "/service-worker.js"
-  status = 301
-  force = true
-
 [[headers]]
   for = "/service-worker.js"
   [headers.values]
@@ -53,3 +47,6 @@
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "deny"
     X-XSS-Protection = "1; mode=block"
+
+[[plugins]]
+  package = "netlify-plugin-cache-nextjs"

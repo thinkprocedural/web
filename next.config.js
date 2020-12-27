@@ -1,9 +1,5 @@
 const withOffline = require('next-offline');
 
-const nextConfig = {
-  workboxOpts: {
-    swDest: 'static/service-worker.js',
-  },
-};
+const nextConfig = {};
 
 module.exports = withOffline(nextConfig);
