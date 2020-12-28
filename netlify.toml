@@ -36,7 +36,7 @@
         object-src 'none';
         prefetch-src 'self';
         script-src 'self' cdn.jsdelivr.net;
-        style-src 'self' cdn.jsdelivr.net;
+        style-src 'self' 'unsafe-inline' cdn.jsdelivr.net;
         upgrade-insecure-requests;
     """
     Expect-CT = "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
