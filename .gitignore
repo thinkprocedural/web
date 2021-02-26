@@ -14,7 +14,10 @@ yarn.lock
 # other
 .next/
 *.log*
-build
+
+build/
 logs/
 out/
 tmp/
+
+public/sw.js
