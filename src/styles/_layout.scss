@@ -13,26 +13,28 @@ main {
 
     transform: translate3d(-50%, -50%, 0);
 
-    color: $color-100;
     text-align: center;
     text-decoration: none;
-    transition: color 200ms ease-in-out;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: $color-050;
-    }
 
     .title {
+        color: $color-100;
         font-size: 5rem;
         font-weight: 600;
         margin: 0 0 1rem 0;
+        transition: color 200ms ease-in-out;
     }
 
     .subtitle {
         color: $color-050;
         margin: 0;
         padding: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        .title {
+            color: $color-050;
+        }
     }
 }
