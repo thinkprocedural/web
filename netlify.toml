@@ -40,7 +40,6 @@
         upgrade-insecure-requests;
     """
     Expect-CT = "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
-    Permissions-Policy = "fullscreen=('self')"
     Referrer-Policy = "strict-origin"
     Strict-Transport-Security = "max-age=31557600; includesubdomains; preload"
     Vary = "Accept-Encoding"

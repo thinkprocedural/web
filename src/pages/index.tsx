@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,10 +9,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <a href="https://discord.gg/b8U5Hdy" className="card">
-          <h1>Think Procedural</h1>
-          <p>Houdini Discord Community</p>
-        </a>
+        <div className="content">
+          <Link href="https://discord.gg/b8U5Hdy">
+            <a>
+              <h1 className="title">Think Procedural</h1>
+              <p className="subtitle">Houdini Discord Community</p>
+            </a>
+          </Link>
+        </div>
       </main>
     </>
   );
